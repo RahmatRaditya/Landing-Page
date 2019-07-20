@@ -1,0 +1,233 @@
+/* GLOBAL VERSION */
+
+.navbar{
+    z-index: 1;
+    position: relative;
+}
+.my-btn {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+}
+
+.navbar-brand,
+.nav-item {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.navbar-toggler {
+    color: white !important;
+}
+
+.jumbotron {
+    background-image: url(../img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-size: 40px;
+    font-weight: 150;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.info-panel {
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    margin-top: -100px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -5px;
+    font-weight: 200px;
+}
+
+.workingspace {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.workingspace h3 {
+    font-size: 35px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.workingspace h3 span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 12px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.testimonial{
+    margin-top: 50px;
+}
+
+.testimonial h5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.testimonial figure img{
+    width: 90px;
+    margin-top: 30px;
+}
+
+.testimonial figure img{
+    width: 60px;
+    margin: 20px 10px;
+    opacity: 0.5;
+}
+
+.testimonial figure img.utama{
+    width: 90px;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.testimonial figure{
+    text-align: center;
+}
+
+.testimonial figure h5{
+    font-size: 16px;
+    color: #1c2c5d;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+}
+
+.testimonial figure p{
+    font-size: 12px;
+    color: #acacac;
+}
+
+.footer{
+    color: #acacac;
+    font-size: 14px;
+    margin-top: 100px;
+}
+
+
+
+/* =================================================================
+==================================================================== */
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    .my-nav-link {
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .my-nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .info-panel {
+        padding: 30px 50px;
+        box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .info-panel img {
+        margin-right: 20px;
+    }
+
+    .workingspace {
+        margin-top: 120px;
+        text-align: left;
+    }
+
+    .workingspace h3 {
+        font-size: 52px;
+    }
+
+    .workingspace p {
+        font-size: 18px;
+        margin: 30px 0;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron::after {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+    .testimonial{
+        margin-top: 100px;
+    }
+
+    .testimonial h5{
+        font-size: 32px;
+    }
+
+}
